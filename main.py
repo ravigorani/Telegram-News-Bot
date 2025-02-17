@@ -5,8 +5,7 @@ from WebScrap import Scrapper
 import time
 import asyncio
 
-Token = '8070627114:AAGkjds6TeojOBo1ZLjQdNDY052ivIHby7A'
-username ='@timesofindianewsbot'
+Token = <Token>
 
 async def start(update : Update,context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hello!, Thanks for chating with me")
