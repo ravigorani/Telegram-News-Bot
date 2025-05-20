@@ -17,7 +17,6 @@ def scrape_article(url):
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        # Scraping the heading (found in <h1> -> <span>)
         heading = soup.find('h1').find('span').text.strip()
 
         content_div = soup.find('div', class_='_s30J clearfix').text.strip()
