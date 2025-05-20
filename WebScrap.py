@@ -32,7 +32,7 @@ def scrape_article(url):
 def summerize_text(text):
     prompt ="""You are a Text Summerizer. You will be taking text and summerizing the entire text and provide the important summary in 1 to 2 sentence.
 The Text which you have to summerize will be : """
-    model = genai.GenerativeModel("gemini-pro")
+    model = genai.GenerativeModel("gemini-2.0-flash-lite")
     response = model.generate_content(prompt + text)
     return response.text
 
