@@ -4,8 +4,10 @@ from telegram import Update
 from WebScrap import Scrapper
 import time
 import asyncio
-
-Token = <Token>
+import os
+from dotenv import load_dotenv
+load_dotenv()
+Token=os.getenv("Token")
 
 async def start(update : Update,context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hello!, Thanks for chating with me")
