@@ -9,8 +9,6 @@ import asyncio
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-# URL of the Times of India's Business section
-
 # Function to extract articke heading and content
 def scrape_article(url):
     # Sending a request to fetch the webpage content
